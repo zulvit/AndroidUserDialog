@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/simple_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/simple_dialog_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/standard_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_standard_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/simple_dialog_btn"
+        app:layout_constraintStart_toStartOf="@+id/simple_dialog_btn"
+        app:layout_constraintTop_toBottomOf="@+id/simple_dialog_btn" />
+
+    <Button
+        android:id="@+id/list_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_list_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/standard_dialog_btn"
+        app:layout_constraintStart_toStartOf="@+id/standard_dialog_btn"
+        app:layout_constraintTop_toBottomOf="@+id/standard_dialog_btn" />
+
+    <Button
+        android:id="@+id/custom_dialog_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_custom_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/list_dialog_btn"
+        app:layout_constraintStart_toStartOf="@+id/list_dialog_btn"
+        app:layout_constraintTop_toBottomOf="@+id/list_dialog_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
